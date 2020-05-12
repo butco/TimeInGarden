@@ -65,7 +65,8 @@
     linear-gradient(90deg, rgb(18, 179, 56), rgb(81, 180, 56));
 }
 .row {
-  .card {
+  .card,
+  .card-about {
     background-color: rgba(255, 255, 255, 0.7);
     height: 400px;
     width: 100%;
@@ -88,6 +89,23 @@
         height: 30%;
         margin: auto 0;
         font-size: 2rem;
+      }
+    }
+  }
+  .card-about {
+    height: 100%;
+    .card-body {
+      .icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+          margin: 0 30px;
+          color: black;
+          &:hover {
+            color: rgb(62, 61, 61);
+          }
+        }
       }
     }
   }
